@@ -5,8 +5,8 @@ Some addons for django-nose
 
 Install ``django_nose`` in ``INSTALLED_APPS``
 
-Best results should come with
-::
+Best results should come with:
+
 	from django_nose.testcases import FastFixtureTestCase
 	from django_noseplus.testcases import TestCaseMixin
 
