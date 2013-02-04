@@ -14,7 +14,12 @@ Best results should come with:
 	class FooTest(TestCaseMixin, FastFixtureTestCase):
 		pass
 
-	create_functions(TestCase, globals())
+	create_functions(FooTest, globals())
 
 Now you can use pep8-compliant names and methods such as ``self.assert_ok(res)``
+in your test case.
+
+Calling create_functions sets the methods as functions into the global namespace
+so you can do tests without a test case class doing teardown and setup between
+tests.
 
