@@ -65,7 +65,7 @@ class ExpandedTestCase(object):
         if msg is None:
             msg = ', '.join([e.subject for e in mail.outbox])
             msg = '%d != %d %s' % (len(mail.outbox), count, msg)
-        assert_equals(len(mail.outbox), count, msg)
+        self.assertEquals(len(mail.outbox), count, msg)
 
 
 class TestCaseMixin(Pep8TestCase, ExpandedTestCase):
